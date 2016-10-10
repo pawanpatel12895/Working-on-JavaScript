@@ -1,0 +1,24 @@
+<html>
+<head>
+      <title>Use Of Javascript</title>
+</head>
+<body>
+      <script type="text/javascript">
+<!--            var retval = confirm("continue");-->
+<!--            if(retval == true)-->
+<!--                  window.location("http://www.google.co.in");-->
+<!--            else -->
+<!--                  document.write("Not confirmed");    -->
+<!--            alert("done");-->
+<!--            prompt("Enter your name","Your name here");-->
+      void func1()
+      {     alert("1223446");
+      }
+      
+      </script>     
+      <form>
+            <p>pafssadas</p>
+            <input type="button" value="click me" onclick="func1();"/>
+      </form>
+</body>
+</html>

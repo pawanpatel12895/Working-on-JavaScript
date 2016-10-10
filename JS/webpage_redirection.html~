@@ -1,0 +1,24 @@
+<html>
+  
+  <head>
+	<title>Page Redirection</title>
+	<script>
+		function forfun()
+	  	{	var app = navigator.appName;
+		 	//alert(app);
+		 	if(app=="Netscape")
+		 	      window.location="http://www.google.co.in";
+		      else
+		            alert("no googling bro!!");
+		};
+	  	setTimeout("forfun()",1000);
+	</script>
+  </head>
+  <body>
+	<p id="para" name="para" >
+		with in a second, you will be redirected to new page.
+	</p>
+  </body>
+
+</html>
+

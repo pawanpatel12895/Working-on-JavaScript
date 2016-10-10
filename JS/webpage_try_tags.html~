@@ -1,0 +1,25 @@
+<html>
+  <head>
+	<title>
+	  trying tags
+	</title>
+	<script>
+	      var col = ["green", "red", "pink", "cyan","blue","yellow","grey","magenda"];
+	      var i=0;
+	      function abc()
+	      {
+	          var str = "Hello World!";
+                var result = str.backgroundcolor(col[i]);
+                i=(i+1)%col.length;
+                document.getElementById("demo").innerHTML = result;	      
+	      }
+	</script>
+  </head>
+  <body  style="text-align:center; color:blue; font-family:verdana; font-size:40px ">
+  <p id="demo">Hello World!</p>
+  <button onclick="abc()">click</button>
+  </body>
+</html>
+
+
+

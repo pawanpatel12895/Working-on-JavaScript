@@ -1,0 +1,34 @@
+<!-- Calculator app - HTML,CSS,JAVASCRIPT, JQUERRY-->
+<html>
+<head>
+      <title>Calculator App with HTML,CSS,JS</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script>
+      $(document).ready(function()
+      {     $("#textinput").keyup(function (e)
+            {     if(e.which==13) 
+                        calculate();
+            }); 
+            $("#textinput").keydown(function (e)
+            {     if(e.which==13) 
+                        calculate();
+            });
+      });
+             function calculate()
+            {     var A = eval(document.form1.textinput.value);
+                  document.form1.textinput.value=A;
+            }
+      </script>
+</head>
+<body style="text-align:center; ">
+      <div style="color:blue; font-family:">
+            <h2>Calculator</h2>
+      </div>
+      <div>
+            <form name="form1" style="padding:20px; font-family:verdana">
+                  <input id="textinput" type="text" name="textinput" style="background-color=cyan" placeholder="enter here" />
+                  <input name="button" type="button" style="color:blue" value="calculate" onclick="calculate();"/>
+            </form>
+      </div>
+</body>
+</html>

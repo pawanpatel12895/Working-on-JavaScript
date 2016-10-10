@@ -1,0 +1,26 @@
+<html>
+<head>
+      <title>WebPage1</title>
+      <link rel="stylesheet"  type="text/css" href="webpage1.css"/>
+<head>
+<body>
+      <div id="divHeader">
+            <h1>Title</h1>
+            <h2>Subtitle</h2>
+            <div id="divAllPara">
+                  <br>
+                 <h3>Para 1</h3>
+                  <p>content of paragraph</p>
+                   <br>
+                  <h3>Para 2</h3>
+                  <p>content of paragraph</p> 
+                  <br>
+                  <h3>Para 3</h3>
+                  <p>content of paragraph</p> 
+                  <br>
+                  <h3>Para 4</h3>
+                  <p>content of paragraph</p>
+            </div>
+      </div>
+</body>
+</html>

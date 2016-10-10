@@ -1,0 +1,26 @@
+<!-- Calculator app -->
+<html>
+<head>
+      <title>Calculator App with HTML,CSS,JS</title>
+      <script>
+            function calculate()
+            {     var A = eval(document.form1.textinput.value);
+                  if(A=="undefined")
+                        alert("undefined");
+                  else
+                  document.form1.textinput.value=A;
+            }
+      </script>
+</head>
+<body style="text-align:center; ">
+      <div style="color:blue; font-family:">
+            <h2>Calculator</h2>
+      </div>
+      <div>
+            <form name="form1" style="padding:20px; font-family:verdana">
+                  <input id="textinput" name="textinput" style="background-color=cyan" placeholder="enter here"  onkeyup="precalculate()"/>
+                  <input name="button" type="button" style="color:blue" value="calculate" onclick="calculate();"/>
+            </form>
+      </div>
+</body>
+</html>

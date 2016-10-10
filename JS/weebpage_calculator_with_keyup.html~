@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/index.html# -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<link rel="icon" type="image/png" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/favicon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Preview,edit,save your HTML,CSS and Javascript right in your browser,with syntax highlighting and autocompletion">
+		<script async="" src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/google-analytics-bundle.js"></script><script type="text/javascript" src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/check-if-online.js"></script>
+		<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/eclipse.css">
+		<title>Coding The Web</title>
+		<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/codemirror.css">
+		
+		<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/modal/modal.css">
+		<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/codemirror.css">
+		<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/css/pure.css">
+		<link href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/css/splitter.css" rel="stylesheet" type="text/css">
+		<!--[if lte IE 8]>
+		<link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+		<![endif]-->
+		<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/css/layouts/side-menu.css">
+		<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/css/index.css">
+		<!--<![endif]-->
+	</head>
+	<body style="cursor: auto;">
+		<div id="layout">
+			<!-- Menu toggle -->
+			<a href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/index.html#menu" id="menuLink" class="menu-link">
+			<!-- Hamburger icon -->
+			<span></span>
+			</a>
+			<div id="menu">
+				<div class="pure-menu pure-menu-open">
+					<a class="pure-menu-heading" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/index.html#" style="font-size:0.9em;background-color:black">Coding The Web </a>
+					<div class="demo" style="margin:auto;text-align:center;padding:2px;background-color:black">
+						<a href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/index.html#modal-settings" id="try" title="Clicking this link shows the modal">
+						<img src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/css/img/set.png" class="call-modal" title="Clicking this link shows the modal" id="sett" style="z-index:999;top:10px ">
+						</a><a href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/index.html#modal-help" id="try2" title="Clicking this link shows the modal">
+						<img src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/css/img/help.png" class="call-modal" title="Clicking this link shows the modal" id="sett" style="z-index:999;top:10px ">
+						</a>
+						<img name="g+" id="gplus" src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/css/img/gp.png" style="z-index:999;top:4px ">
+						<img src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/css/img/fb.png" id="fbook" style="z-index:999;top:10px ">
+						<img src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/css/img/t.png" id="tter" style="z-index:999;top:10px ">
+					</div>
+					
+					<ul>
+						<li class="menu-item-divided">
+							<a id="execute" style="font-size:13px" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/index.html#">Execute</a>
+						</li>
+						<li><a id="hs" download="index.html" style="font-size:13px">Save (Beta)</a></li>
+						<li class="divider">Format  </li>
+						<li><a href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/index.html#" id="autoFormatHtml" style="font-size:12px">HTML</a></li>
+						<li><a href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/index.html#" id="autoFormatCss" style="font-size:12px">CSS</a></li>
+						<li><a href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/index.html#" id="autoFormatJs" style="font-size:12px">JS</a></li>
+						<li>
+							<div class="onoffswitch">
+								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="autoPreview">
+								<label class="onoffswitch-label" for="autoPreview">
+									<div class="onoffswitch-inner"></div>
+									<div class="onoffswitch-switch"></div>
+								</label>
+							</div>
+						</li>
+						
+						<li>
+							<select id="theme" style="width:100%" onchange="selectTheme()">
+								<option selected="">Theme</option>
+								<option>3024-day</option>
+								<option>3024-night</option>
+								<option>ambiance</option>
+								<option>base16-dark</option>
+								<option>base16-light</option>
+								<option>blackboard</option>
+								<option>cobalt</option>
+								<option>eclipse</option>
+								<option>elegant</option>
+								<option>erlang-dark</option>
+								<option>lesser-dark</option>
+								<option>mbo</option>
+								<option>mdn-like</option>
+								<option>midnight</option>
+								<option>monokai</option>
+								<option>neat</option>
+								<option>night</option>
+								<option>paraiso-dark</option>
+								<option>paraiso-light</option>
+								<option>pastel-on-dark</option>
+								<option>rubyblue</option>
+								<option>solarized dark</option>
+								<option>solarized light</option>
+								<option>the-matrix</option>
+								<option>twilight</option>
+								<option>vibrant-ink</option>
+								<option>xq-dark</option>
+								<option>xq-light</option>
+							</select>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+			<div id="main">
+				<div class="contentA">
+					<div id="whole" style="height:99%;" class="splitter_panel">
+						<div id="hlfarea" class="left_panel splitter_panel" style="width: 573px;">
+							<div id="harea" class="codeRegion top_panel" style="height: 576px;">
+								<p>HTML</p>
+								<textarea id="hcode" name="hcode" style="display: none;"></textarea><div class="CodeMirror cm-s-default CodeMirror-focused"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 199px; left: 103px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 29px; display: block; right: 0px;"><div style="height: 100%; min-height: 1px; width: 993px;"></div></div><div class="CodeMirror-vscrollbar" style="bottom: 15px;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" style="width: 15px; height: 15px;"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; min-width: 992.859px; min-height: 463px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 74px; top: 195px; height: 13px;">&nbsp;</div></div><div class="CodeMirror-code"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">1</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">&lt;!-- Calculator app - HTML,CSS,JAVASCRIPT, JQUERRY--&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">2</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tag">&lt;html&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">3</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tag">&lt;head&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">4</div></div><pre class=""><span style="padding-right: 0.1px;">      <span class="cm-tag">&lt;title&gt;</span>Calculator App with HTML,CSS,JS<span class="cm-tag">&lt;/title&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">5</div></div><pre class=""><span style="padding-right: 0.1px;">      <span class="cm-tag">&lt;script</span> <span class="cm-attribute">src</span>=<span class="cm-string">"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"</span><span class="cm-tag">&gt;&lt;/script&gt;</span></span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">6</div></div><pre class=""><span style="padding-right: 0.1px;">      <span class="cm-tag">&lt;script&gt;</span></span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">7</div></div><pre class=""><span style="padding-right: 0.1px;">      <span class="cm-variable">$</span>(<span class="cm-variable">document</span>).<span class="cm-property">ready</span>(<span class="cm-keyword">function</span>()</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">8</div></div><pre><span style="padding-right: 0.1px;">      {     <span class="cm-variable">$</span>(<span class="cm-string">"#textinput"</span>).<span class="cm-property">keyup</span>(<span class="cm-keyword">function</span> (<span class="cm-def">e</span>)</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">9</div></div><pre class=""><span style="padding-right: 0.1px;">            {     <span class="cm-keyword">if</span>(<span class="cm-variable-2">e</span>.<span class="cm-property">which</span><span class="cm-operator">==</span><span class="cm-number">13</span>) </span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">10</div></div><pre class=""><span style="padding-right: 0.1px;">                        <span class="cm-variable">calculate</span>();</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">11</div></div><pre><span style="padding-right: 0.1px;">            }); </span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">12</div></div><pre><span style="padding-right: 0.1px;">            <span class="cm-variable">$</span>(<span class="cm-string">"#textinput"</span>).<span class="cm-property">keydown</span>(<span class="cm-keyword">function</span> (<span class="cm-def">e</span>)</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">13</div></div><pre class=""><span style="padding-right: 0.1px;">            {     <span class="cm-keyword">if</span>(<span class="cm-variable-2">e</span>.<span class="cm-property">which</span><span class="cm-operator">==</span><span class="cm-number">13</span>) </span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">14</div></div><pre class=""><span style="padding-right: 0.1px;">                        <span class="cm-variable">calculate</span>();</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">15</div></div><pre><span style="padding-right: 0.1px;">            });</span></pre></div><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">16</div></div><pre class=""><span style="padding-right: 0.1px;">      });</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">17</div></div><pre class=""><span style="padding-right: 0.1px;">             <span class="cm-keyword">function</span> <span class="cm-variable">calculate</span>()</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">18</div></div><pre class=""><span style="padding-right: 0.1px;">            {     <span class="cm-keyword">var</span> <span class="cm-def">A</span> <span class="cm-operator">=</span> <span class="cm-variable">eval</span>(<span class="cm-variable">document</span>.<span class="cm-property">form1</span>.<span class="cm-property">textinput</span>.<span class="cm-property">value</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">19</div></div><pre class=""><span style="padding-right: 0.1px;">                  <span class="cm-variable">document</span>.<span class="cm-property">form1</span>.<span class="cm-property">textinput</span>.<span class="cm-property">value</span><span class="cm-operator">=</span><span class="cm-variable-2">A</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">20</div></div><pre class=""><span style="padding-right: 0.1px;">            }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">21</div></div><pre class=""><span style="padding-right: 0.1px;">            </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">22</div></div><pre class=""><span style="padding-right: 0.1px;">      <span class="cm-tag">&lt;/script&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">23</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tag">&lt;/head&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">24</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tag">&lt;body</span> <span class="cm-attribute">style</span>=<span class="cm-string">"text-align:center; "</span><span class="cm-tag">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">25</div></div><pre class=""><span style="padding-right: 0.1px;">      <span class="cm-tag">&lt;div</span> <span class="cm-attribute">style</span>=<span class="cm-string">"color:blue; font-family:"</span><span class="cm-tag">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">26</div></div><pre class=""><span style="padding-right: 0.1px;">            <span class="cm-tag">&lt;h2&gt;</span>Calculator<span class="cm-tag">&lt;/h2&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">27</div></div><pre class=""><span style="padding-right: 0.1px;">      <span class="cm-tag">&lt;/div&gt;</span></span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">28</div></div><pre class=""><span style="padding-right: 0.1px;">      <span class="cm-tag">&lt;div&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">29</div></div><pre class=""><span style="padding-right: 0.1px;">            <span class="cm-tag">&lt;form</span> <span class="cm-attribute">name</span>=<span class="cm-string">"form1"</span> <span class="cm-attribute">style</span>=<span class="cm-string">"padding:20px; font-family:verdana"</span><span class="cm-tag">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">30</div></div><pre class=""><span style="padding-right: 0.1px;">                  <span class="cm-tag">&lt;input</span> <span class="cm-attribute">id</span>=<span class="cm-string">"textinput"</span> <span class="cm-attribute">type</span>=<span class="cm-string">"text"</span> <span class="cm-attribute">name</span>=<span class="cm-string">"textinput"</span> <span class="cm-attribute">style</span>=<span class="cm-string">"background-color=cyan"</span> <span class="cm-attribute">placeholder</span>=<span class="cm-string">"enter here"</span> <span class="cm-tag">/&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">31</div></div><pre class=""><span style="padding-right: 0.1px;">                  <span class="cm-tag">&lt;input</span> <span class="cm-attribute">name</span>=<span class="cm-string">"button"</span> <span class="cm-attribute">type</span>=<span class="cm-string">"button"</span> <span class="cm-attribute">style</span>=<span class="cm-string">"color:blue"</span> <span class="cm-attribute">value</span>=<span class="cm-string">"calculate"</span> <span class="cm-attribute">onclick</span>=<span class="cm-string">"calculate();"</span><span class="cm-tag">/&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">32</div></div><pre class=""><span style="padding-right: 0.1px;">            <span class="cm-tag">&lt;/form&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">33</div></div><pre class=""><span style="padding-right: 0.1px;">      <span class="cm-tag">&lt;/div&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">34</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tag">&lt;/body&gt;</span></span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">35</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tag">&lt;/html&gt;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 463px;"></div><div class="CodeMirror-gutters" style="height: 596px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div>
+							</div><div class="hsplitter" style="top: 576px;"></div>
+							<div id="scriptarea" class="splitter_panel bottom_panel" style="height: 19px;">
+								<div id="cssa" class="codeRegion left_panel" style="width: 277px;">
+									<p>CSS</p>
+									<textarea id="ccode" name="ccode" style="display: none;"></textarea><div class="CodeMirror cm-s-default"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 29px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; min-width: 7px; min-height: 21px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 13px;">&nbsp;</div></div><div class="CodeMirror-code"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">1</div></div><pre class=""><span style="padding-right: 0.1px;"><span>​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 21px;"></div><div class="CodeMirror-gutters" style="height: 322px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div>
+								</div><div class="vsplitter" style="left: 277px;"></div>
+								<div id="jsa" class="codeRegion right_panel" style="width: 292px;">
+									<p>Javascript</p>
+									<textarea id="jcode" name="jcode" style="display: none;"></textarea><div class="CodeMirror cm-s-default"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 29px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; min-width: 7px; min-height: 21px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 13px;">&nbsp;</div></div><div class="CodeMirror-code"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">1</div></div><pre class=""><span style="padding-right: 0.1px;"><span>​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 21px;"></div><div class="CodeMirror-gutters" style="height: 322px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div>
+								</div>
+							</div>
+						</div><div class="vsplitter" style="left: 573px;"></div>
+						<div id="farea" class="right_panel" style="width: 573px;"><iframe id="output" name="iframe1" src="./weebpage_calculator_with_keyup_files/saved_resource.html"></iframe></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--         // <script src="js/jquery.js"></script>
+		// <script src="js/splitter.js"></script>
+		// <script src="js/lib/codemirror.js"></script>
+		// <script src="js/emmet.min.js"></script>
+		// <script src="js/lib/formatting.js"></script>
+		// <script src="js/mode/xml.js"></script>
+		// <script src="js/mode/javascript.js"></script>
+		// <script src="js/mode/css.js"></script>
+		// <script src="js/mode/htmlmixed.js"></script>
+		// <script src="js/lib/addon/search/searchcursor.js"></script>
+		// <script src="js/lib/addon/search/match-highlighter.js"></script>
+		// <script src="js/lib/addon/selection/active-line.js"></script>
+		// <script src="js/lib/addon/edit/matchbrackets.js"></script>
+		// <script type='text/javascript' src='js/slick.menu.js'></script>
+		// <script src="js/ui.js"></script>
+		// <script src="js/db.js"></script>
+		// <script src="js/index.js"></script> -->
+		<link rel="stylesheet" type="text/css" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/lint/lint.css">
+		<link rel="stylesheet" type="text/css" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/hint/show-hint.css">
+		<link rel="stylesheet" type="text/css" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/display/fullscreen.css">
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/jquery.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/splitter.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/codemirror.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/emmet.min.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/formatting.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/mode/xml.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/mode/javascript.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/mode/css.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/mode/htmlmixed.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/lint/lint.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/lint/javascript-lint.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/lint/json-lint.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/lint/css-lint.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/display/fullscreen.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/hint/show-hint.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/hint/javascript-hint.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/hint/xml-hint.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/hint/html-hint.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/hint/css-hint.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/search/searchcursor.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/search/match-highlighter.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/selection/active-line.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/edit/matchbrackets.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/edit/closebrackets.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/lib/addon/edit/closetag.js"></script>
+		<script type="text/javascript" src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/slick.menu.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/ui.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/db.js"></script>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/index.js"></script>
+		<!-- A modal with its content -->
+		<section class="semantic-content" id="modal-settings" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+			<div class="modal-inner">
+				<header>
+					<h2 id="modal-label">Settings</h2>
+				</header>
+				<div class="modal-content">
+					<p>Coming really reallly soon.PS: You're gonna love it :)</p>
+				</div>
+				<footer>
+					<p>Thanks for stopping by :)</p>
+				</footer>
+			</div>
+			<!-- Use Hash-Bang to maintain scroll position when closing modal -->
+			<a href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/index.html#!" class="modal-close" title="Close this modal" data-dismiss="modal">×</a>
+		</section>
+		<section class="semantic-content" id="modal-help" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+			<div class="modal-inner">
+				<header>
+					<h2 id="modal-label">Information</h2>
+				</header>
+				<div class="modal-content">
+					<img style="float: left;margin-right: 15px" src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/icon_128.png">  <blockquote>
+						<p>Created by<br><strong>E.S.Suraj and S.Nikhil</strong></p>
+					<p> Send in your suggestions to <br><em> sundereshwaran@gmail.com , sirpurnikhil@gmail.com</em></p></blockquote>
+				</div>
+				<div id="hlp" style="font-size:12px">
+					   <ul>
+                        <li>Just write your code in the corresponding tabs on right and see your code execute on left side by clicking Preview Button.</li>
+                        <li>Autopreview dynamically Shows output as you type the code.</li>
+                        <li>Jquery 1.11 is included so..no need to import it</li>
+                        <br>
+                        <b>Coding the Web 4.2</b><br>
+                        
+                        <em>Change Log: </em>
+                        <li>Zen Coding( Ctrl + E )</li>
+                        <li><b>You can now SAVE to html :)</b></li>
+                        <li>Added Syntax highlighting</li>
+                        <li>HTML,CSS and JS code editers appear all at once</li>
+                        <li>resizable splitters</li>
+                        <li>autoclose end tags   </li>
+                        <li>js,html.css code suggestion on (ctrl+space)</li>
+                        <li>highlighting all occurences of a selected word in html and js</li>
+                        <li>added bookmarks on gutter of html codearea</li>
+                        <li>Added themes support for code editors..</li>
+                        <li>added auto formatting for HTML CSS and JS </li>
+                    </ul>
+				</div>
+			</div>
+			<!-- Use Hash-Bang to maintain scroll position when closing modal -->
+			<a href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/index.html#!" class="modal-close" title="Close this modal" data-dismiss="modal">×</a>
+		</section>
+		<script src="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/modal/modal.js"></script><!-- JS for Modal -->
+		<div id="slick" style="font-size: 12px; float: left; display: none;"></div>
+	
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/3024-day.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/3024-night.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/ambiance.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/base16-dark.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/base16-light.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/blackboard.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/cobalt.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/eclipse.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/elegant.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/erlang-dark.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/lesser-dark.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/mbo.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/mdn-like.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/midnight.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/monokai.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/neat.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/night.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/paraiso-dark.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/paraiso-light.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/pastel-on-dark.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/rubyblue.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/solarized.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/the-matrix.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/twilight.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/vibrant-ink.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/xq-dark.css">
+	<link rel="stylesheet" href="chrome-extension://pbinfbikhndabcdlabpcbhggkcdakgfg/js/theme/xq-light.css">
+<div id="dc-slick-36" class="dc-slick bottom align-left" style="float: none; position: fixed; z-index: 10000; margin-bottom: -108px; left: 0px;"><div class="tab" style="position: absolute; margin-top: -32px; left: 0px;"><span>Code Hints</span></div><div class="dc-slick-content" style="height: 68px;">
+			<ul>
+				<li><p>Try of Zen Coding.Enter you code and press Ctrl+Q</p></li>
+			</ul>
+			
+			
+		</div></div></body></html>

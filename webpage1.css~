@@ -1,0 +1,14 @@
+body {
+    background-color: #222222;
+    color: green;
+    padding: 5px;
+     
+}
+
+#para {
+      border-width: 1px;      
+      border-color: #118811;
+      border-style:solid;
+      background-color: #333333;
+      
+}
